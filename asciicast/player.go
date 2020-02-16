@@ -3,7 +3,7 @@ package asciicast
 import (
 	"time"
 
-	"github.com/asciinema/asciinema/terminal"
+	"github.com/btwiuse/ameniicsa/terminal"
 )
 
 type Player interface {

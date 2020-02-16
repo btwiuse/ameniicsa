@@ -1,4 +1,4 @@
-module github.com/asciinema/asciinema
+module github.com/btwiuse/ameniicsa
 
 go 1.14
 

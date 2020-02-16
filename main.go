@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/asciinema/asciinema/api"
-	"github.com/asciinema/asciinema/commands"
-	"github.com/asciinema/asciinema/util"
+	"github.com/btwiuse/ameniicsa/api"
+	"github.com/btwiuse/ameniicsa/commands"
+	"github.com/btwiuse/ameniicsa/util"
 	"github.com/docopt/docopt.go"
 )
 

@@ -8,8 +8,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/asciinema/asciinema/ptyx"
-	"github.com/asciinema/asciinema/util"
+	"github.com/btwiuse/ameniicsa/ptyx"
+	"github.com/btwiuse/ameniicsa/util"
 	"github.com/creack/termios/raw"
 	"github.com/kr/pty"
 	"golang.org/x/crypto/ssh/terminal"
