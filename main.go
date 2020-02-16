@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/asciinema/asciinema/Godeps/_workspace/src/github.com/docopt/docopt-go"
 	"github.com/asciinema/asciinema/api"
 	"github.com/asciinema/asciinema/commands"
 	"github.com/asciinema/asciinema/util"
+	"github.com/docopt/docopt.go"
 )
 
 const Version = "1.2.0"

@@ -8,7 +8,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/asciinema/asciinema/Godeps/_workspace/src/code.google.com/p/gcfg"
+	"gopkg.in/gcfg.v1"
 )
 
 const (
