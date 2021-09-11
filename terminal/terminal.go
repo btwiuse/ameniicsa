@@ -10,8 +10,7 @@ import (
 
 	"github.com/btwiuse/ameniicsa/ptyx"
 	"github.com/btwiuse/ameniicsa/util"
-	"github.com/creack/termios/raw"
-	"github.com/kr/pty"
+	"github.com/creack/pty"
 	"golang.org/x/crypto/ssh/terminal"
 	"golang.org/x/text/encoding/unicode"
 	"golang.org/x/text/transform"
@@ -60,11 +59,11 @@ func (p *Pty) Record(command string, w io.Writer) error {
 	// put stdin in raw mode (if it's a tty)
 	fd := p.Stdin.Fd()
 	if terminal.IsTerminal(int(fd)) {
-		oldState, err := raw.MakeRaw(fd)
+		oldState, err := terminal.MakeRaw(int(fd))
 		if err != nil {
 			return err
 		}
-		defer raw.TcSetAttr(fd, oldState)
+		defer terminal.Restore(int(fd), oldState)
 	}
 
 	// do initial resize
